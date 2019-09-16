@@ -40,6 +40,26 @@
 import Foundation
 class Solution20 {
     func isValid(_ s: String) -> Bool {
-        return false
+        if s.count % 2 == 1 {
+            return false
+        }
+        let lDic = ["(":")","{":"}","[":"]"]
+        let rDic = [")":"(","}":"{","]":"["]
+        var stack = Array<String>()
+
+        for ch in s {
+            if let lv = lDic[String(ch)] {
+                stack.append(String(ch))
+                continue
+            }
+            if let rv = rDic[String(ch)] {
+                if rv == stack.last {
+                    stack.removeLast()
+                } else {
+                    return false
+                }
+            }
+        }
+        return stack.count == 0
     }
 }

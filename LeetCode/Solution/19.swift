@@ -25,17 +25,6 @@
 //著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 import Foundation
 
-
-//Definition for singly-linked list.
- public class ListNode {
-      public var val: Int
-      public var next: ListNode?
-      public init(_ val: Int) {
-          self.val = val
-          self.next = nil
-      }
-  }
-
 class Solution19 {
 //    func removeNthFromEnd(_ head: ListNode?, _ n: Int) -> ListNode? {
 //        var array = Array<ListNode>()
