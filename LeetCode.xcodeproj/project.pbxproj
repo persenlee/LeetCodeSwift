@@ -24,11 +24,13 @@
 		98D288BC232F810C00FFF0AA /* 24.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D288BB232F810C00FFF0AA /* 24.swift */; };
 		98D288BE232F8CEB00FFF0AA /* 25.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D288BD232F8CEB00FFF0AA /* 25.swift */; };
 		98E47CB62321EDEF00B121F9 /* 15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E47CB52321EDEF00B121F9 /* 15.swift */; };
+		98E5131F23307EC9002FBE55 /* 29.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E5131E23307EC9002FBE55 /* 29.swift */; };
 		98E7A89A230A449F00029CE9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E7A899230A449F00029CE9 /* main.swift */; };
 		98F0A878230E8690003FFB37 /* 8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F0A877230E8690003FFB37 /* 8.swift */; };
 		98F0A87A230E8EA5003FFB37 /* 9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F0A879230E8EA5003FFB37 /* 9.swift */; };
 		98F0A87C230E9207003FFB37 /* 10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F0A87B230E9207003FFB37 /* 10.swift */; };
 		98F128022318AAF30000C12C /* 11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F128012318AAF30000C12C /* 11.swift */; };
+		98FBA5752332062E001F1017 /* 30.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FBA5742332062E001F1017 /* 30.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,12 +64,14 @@
 		98D288BB232F810C00FFF0AA /* 24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 24.swift; sourceTree = "<group>"; };
 		98D288BD232F8CEB00FFF0AA /* 25.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 25.swift; sourceTree = "<group>"; };
 		98E47CB52321EDEF00B121F9 /* 15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 15.swift; sourceTree = "<group>"; };
+		98E5131E23307EC9002FBE55 /* 29.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 29.swift; sourceTree = "<group>"; };
 		98E7A896230A449E00029CE9 /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E7A899230A449F00029CE9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		98F0A877230E8690003FFB37 /* 8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 8.swift; sourceTree = "<group>"; };
 		98F0A879230E8EA5003FFB37 /* 9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9.swift; sourceTree = "<group>"; };
 		98F0A87B230E9207003FFB37 /* 10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10.swift; sourceTree = "<group>"; };
 		98F128012318AAF30000C12C /* 11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11.swift; sourceTree = "<group>"; };
+		98FBA5742332062E001F1017 /* 30.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 30.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				9824EAB3230D14D400326C59 /* 5.swift */,
 				98D288BB232F810C00FFF0AA /* 24.swift */,
 				98D288BD232F8CEB00FFF0AA /* 25.swift */,
+				98E5131E23307EC9002FBE55 /* 29.swift */,
+				98FBA5742332062E001F1017 /* 30.swift */,
 			);
 			path = Solution;
 			sourceTree = "<group>";
@@ -210,6 +216,7 @@
 			files = (
 				98E7A89A230A449F00029CE9 /* main.swift in Sources */,
 				9824EAB8230D482D00326C59 /* 7.swift in Sources */,
+				98E5131F23307EC9002FBE55 /* 29.swift in Sources */,
 				98465BE82325E70B00F21304 /* 16.swift in Sources */,
 				982B30C923272B0D0087D898 /* 17.swift in Sources */,
 				98972639231D0E3000F625B0 /* 12.swift in Sources */,
@@ -221,6 +228,7 @@
 				986701AF2329E492007CD213 /* 19.swift in Sources */,
 				9824EAB6230D165B00326C59 /* 6.swift in Sources */,
 				98D288BA232F5C6A00FFF0AA /* ListNode.swift in Sources */,
+				98FBA5752332062E001F1017 /* 30.swift in Sources */,
 				98D28609232F1A9800FFF0AA /* 22.swift in Sources */,
 				98F128022318AAF30000C12C /* 11.swift in Sources */,
 				9824EAB4230D14D400326C59 /* 5.swift in Sources */,

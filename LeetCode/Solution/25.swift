@@ -31,6 +31,44 @@ import Foundation
 
 class Solution25 {
     func reverseKGroup(_ head: ListNode?, _ k: Int) -> ListNode? {
-        return nil
+        if k <= 1 {
+            return head
+        }
+        var gHead = head
+        let root = ListNode(0)
+        var groupHead: ListNode? = root
+        while true {
+            var i = 0
+            var gP = gHead
+            var gTail = gP
+            while i < k && gP != nil{
+                gTail = gP
+                gP = gP?.next
+                i+=1
+            }
+            if i < k {
+                groupHead?.next = gHead
+                break
+            } else {
+                gTail?.next = nil
+                groupHead?.next = reverse(gHead)
+                groupHead = gHead
+                gHead = gP
+            }
+        }
+        return root.next
+    }
+    
+    private func reverse(_ head: ListNode?) -> ListNode? {
+        var prevNode = head
+        var curNode = head?.next
+        prevNode?.next = nil
+        while curNode != nil {
+            let tempNode = curNode?.next
+            curNode?.next = prevNode
+            prevNode = curNode
+            curNode = tempNode
+        }
+        return prevNode
     }
 }
