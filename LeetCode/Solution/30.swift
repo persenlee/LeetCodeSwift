@@ -34,7 +34,82 @@
 import Foundation
 
 class Solution30 {
+//    func findSubstring(_ s: String, _ words: [String]) -> [Int] {
+//        if s.count == 0 || words.count == 0 {
+//            return []
+//        }
+//        var result = Array<Int>()
+//        let signleCount =  words.first!.count
+//        let composeLength = signleCount * words.count
+//
+//        if s.count >= composeLength {
+//            var i = 0
+//            while i <= s.count - composeLength {
+//                let subStr = s[s.index(s.startIndex, offsetBy: i)..<s.index(s.startIndex, offsetBy: i + composeLength)]
+//                var j = 0
+//                var words = words
+//                while j <= subStr.count - signleCount {
+//                    let str = subStr[subStr.index(subStr.startIndex, offsetBy: j)..<subStr.index(subStr.startIndex, offsetBy: j + signleCount)]
+//                    if let index = words.firstIndex(of: String(str)) {
+//                        words.remove(at: index)
+//                    } else {
+//                        break
+//                    }
+//                    j+=signleCount
+//                }
+//                if words.count == 0 {
+//                    result.append(i)
+//                }
+//                i += 1
+//            }
+//        }
+//        return result
+//    }
+    
     func findSubstring(_ s: String, _ words: [String]) -> [Int] {
-        return []
+        if s.count == 0 || words.count == 0 {
+            return []
+        }
+        var result = Array<Int>()
+        let signleCount =  words.first!.count
+        let composeLength = signleCount * words.count
+        
+        var map = Dictionary<String,Int>()
+        for word in words {
+            if let count = map[word] {
+                map[word] = count + 1
+            } else {
+                map[word] = 1
+            }
+        }
+        let wordsMap = map
+        
+        if s.count >= composeLength {
+            var i = 0
+            while i <= s.count - composeLength {
+                let subStr = s[s.index(s.startIndex, offsetBy: i)..<s.index(s.startIndex, offsetBy: i + composeLength)]
+                var j = 0
+                var map = wordsMap
+                while j <= subStr.count - signleCount {
+                    let str = subStr[subStr.index(subStr.startIndex, offsetBy: j)..<subStr.index(subStr.startIndex, offsetBy: j + signleCount)]
+                    if let count = map[String(str)] {
+                        let newCount = count - 1
+                        if newCount == 0 {
+                            map.removeValue(forKey: String(str))
+                        } else {
+                            map[String(str)] = newCount
+                        }
+                    } else {
+                        break
+                    }
+                    j+=signleCount
+                }
+                if map.keys.count == 0 {
+                    result.append(i)
+                }
+                i += 1
+            }
+        }
+        return result
     }
 }
